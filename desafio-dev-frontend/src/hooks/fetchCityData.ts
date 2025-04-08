@@ -21,7 +21,6 @@ const fetchCityData = async ({
       `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=e59a34bff956bb38e5f5359bd04b036c&units=metric&lang=pt_BR`
     );
     setCityData(response.data);
-    console.log(response);
   } catch (error) {
     console.error("Erro ao buscar dados climáticos:", error);
   } finally {
