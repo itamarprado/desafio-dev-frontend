@@ -8,7 +8,7 @@ interface Props {
 }
 
 // Return a Promise
-const fetchCities = async ({
+const fetchFoundCities = async ({
   cityName,
   setOptions,
   setLoading,
@@ -38,4 +38,4 @@ const fetchCities = async ({
   }
 };
 
-export default fetchCities;
+export default fetchFoundCities;

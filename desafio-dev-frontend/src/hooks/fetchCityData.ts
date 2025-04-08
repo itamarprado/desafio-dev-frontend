@@ -27,12 +27,6 @@ const fetchCityData = async ({
   } finally {
     setLoading(false);
   }
-
-  const dataNextDays = await axios.get(
-    `api.openweathermap.org/data/2.5/forecast/daily?lat=${lat}&lon=${lon}&cnt=${7}&appid=e59a34bff956bb38e5f5359bd04b036c&units=metric&lang=pt_BR`
-  );
-
-  console.log(dataNextDays.data);
 };
 
 export default fetchCityData;

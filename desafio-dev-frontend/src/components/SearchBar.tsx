@@ -4,7 +4,7 @@ import Autocomplete from "@mui/material/Autocomplete";
 import CircularProgress from "@mui/material/CircularProgress";
 import City from "../models/City.model";
 import { WeatherResponse } from "../models/WeatherResponse.model";
-import fetchCities from "../hooks/fetchFoundCities"; // Adjusted import
+import fetchFoundCities from "../hooks/fetchFoundCities"; // Adjusted import
 import fetchCityData from "../hooks/fetchCityData";
 
 interface Props {
@@ -25,7 +25,7 @@ const SearchBar: React.FC<Props> = ({ setCityData }) => {
     setInputValue(newInputValue);
     // Fetch city data when user types
     if (newInputValue.trim() !== "") {
-      fetchCities({
+      fetchFoundCities({
         cityName: newInputValue,
         setOptions: setOptions,
         setLoading: setLoading,
