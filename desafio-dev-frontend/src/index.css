@@ -1,2 +1,42 @@
 @import "tailwindcss";
 
+/* Dynamic backgrounds according to the weather condition */
+.clear {
+  background-image: url("/clear-sky-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.rain,
+.drizzle {
+  background-image: url("/rain-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.clouds {
+  background-image: url("/cloud-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.snow {
+  background-image: url("/snow-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.thunderstorm {
+  background-image: url("/storm-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.weather-default {
+  background-color: #f0f0f0; /* Default background */
+}
