@@ -19,7 +19,7 @@ const SearchBar: React.FC<Props> = ({ setCityData }) => {
 
   // Função chamada ao digitar no campo de pesquisa
   const handleInputChange = (
-    event: React.SyntheticEvent,
+    _: React.SyntheticEvent,
     newInputValue: string
   ) => {
     setInputValue(newInputValue);
@@ -34,10 +34,7 @@ const SearchBar: React.FC<Props> = ({ setCityData }) => {
   };
 
   // Função chamada ao selecionar uma cidade
-  const handleCitySelect = (
-    event: React.SyntheticEvent,
-    value: City | null
-  ) => {
+  const handleCitySelect = (_: React.SyntheticEvent, value: City | null) => {
     if (value) {
       fetchCityData({
         lat: value.lat,
